@@ -1,0 +1,48 @@
+{
+  "name": "zcstarr-test-sourcecred-pkg-plugin",
+  "description": "test fixture for packagePlugin",
+  "homepage": "https://sourcecred.io",
+  "repository": "github:sourcecred/sourcecred",
+  "version": "0.0.0-development",
+  "private": false,
+  "dependencies": {
+    "@babel/cli": "^7.17.0",
+    "crypto-browserify": "^3.12.0",
+    "deep-freeze": "^0.0.1",
+    "json-stable-stringify": "^1.0.1",
+    "lodash": "^4.17.21",
+    "regenerator-runtime": "^0.13.9",
+    "sourcecred": "file:sourcecred-0.10.0.tgz",
+    "stream-browserify": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "flow": "flow",
+    "lint": "eslint src config --max-warnings 0",
+    "build": "NODE_ENV=development webpack --config ./webpack.config.js"
+  },
+  "license": "(MIT OR Apache-2.0)",
+  "main": "dist/main.js",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-syntax-bigint": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-flow": "^7.16.7",
+    "@babel/preset-react": "^7.8.3",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.0.1",
+    "babel-loader": "^8.2.3",
+    "eslint": "^7.8.1",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-react": "7.23.2",
+    "flow-bin": "^0.135.0",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
